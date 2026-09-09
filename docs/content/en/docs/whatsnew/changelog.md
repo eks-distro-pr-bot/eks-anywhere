@@ -1,14 +1,3 @@
-## [v0.26.2](https://github.com/aws/eks-anywhere/releases/tag/v0.26.2)
-
-### Supported OS version details
-| Provider | Desktop | Server |
-|----------|---------|--------|
-| vSphere | Ubuntu 22.04, 24.04 | Ubuntu 22.04, 24.04, RHEL 8.x, 9.x |
-| Bare Metal | Ubuntu 22.04, 24.04 | Ubuntu 22.04, 24.04, RHEL 8.x, 9.x |
-| Nutanix | Ubuntu 22.04, 24.04 | Ubuntu 22.04, 24.04, RHEL 8.x, 9.x |
-| CloudStack | N/A | RHEL 8.x, 9.x |
-| Snow | N/A | Ubuntu 22.04, 24.04 |
-
 ---
 title: "Changelog"
 linkTitle: "Changelog"
@@ -52,6 +41,31 @@ description: >
 {{% alert title="General Information" color="info" %}}
 * When upgrading to a new minor version, a new OS image must be created using the new image-builder CLI pertaining to that release.
 {{% /alert %}}
+
+## [v0.26.2](https://github.com/aws/eks-anywhere/releases/tag/v0.26.2)
+
+### Supported OS version details
+|                     | vSphere | Bare Metal | Nutanix | Snow |
+|:-------------------:|:-------:|:----------:|:-------:|:----:|
+|    Ubuntu 22.04     |    ✔    |     ✔      |    ✔    |  ✔   |
+|    Ubuntu 24.04     |    ✔    |     ✔      |    ✔    |  —   |
+| Bottlerocket 1.64.0 |    ✔    |     —      |    —    |  —   |
+|      RHEL 8.x       |    ✔    |     ✔      |    ✔    |  —   |
+|      RHEL 9.x       |    ✔    |     ✔      |    ✔    |  —   |
+
+\* Bottlerocket `v1.64.0` applies to Kubernetes versions 1.33 through 1.36. Kubernetes versions 1.30 through 1.32 remain on Bottlerocket `v1.62.0`.
+
+### Changed
+- EKS Distro:
+  - [`v1-36-eks-7`](https://distro.eks.amazonaws.com/releases/1-36/7/)
+  - [`v1-35-eks-13`](https://distro.eks.amazonaws.com/releases/1-35/13/)
+  - [`v1-34-eks-22`](https://distro.eks.amazonaws.com/releases/1-34/22/)
+  - [`v1-33-eks-31`](https://distro.eks.amazonaws.com/releases/1-33/31/)
+  - [`v1-32-eks-41`](https://distro.eks.amazonaws.com/releases/1-32/41/)
+  - [`v1-31-eks-48`](https://distro.eks.amazonaws.com/releases/1-31/48/)
+  - [`v1-30-eks-59`](https://distro.eks.amazonaws.com/releases/1-30/59/)
+- Cilium: `v1.19.4` to `v1.19.6` ([#5616](https://github.com/aws/eks-anywhere-build-tooling/pull/5616))
+- kube-vip: `v1.2.0` to `v1.2.3` ([#5531](https://github.com/aws/eks-anywhere-build-tooling/pull/5531))
 
 ## [v0.26.1](https://github.com/aws/eks-anywhere/releases/tag/v0.26.1)
 
