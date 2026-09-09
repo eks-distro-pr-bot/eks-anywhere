@@ -64,6 +64,7 @@ description: >
   - [`v1-32-eks-41`](https://distro.eks.amazonaws.com/releases/1-32/41/)
   - [`v1-31-eks-48`](https://distro.eks.amazonaws.com/releases/1-31/48/)
   - [`v1-30-eks-59`](https://distro.eks.amazonaws.com/releases/1-30/59/)
+- govmomi: `v0.54.1` to `v0.54.2` ([#5566](https://github.com/aws/eks-anywhere-build-tooling/pull/5566))
 - Cilium: `v1.19.4` to `v1.19.6` ([#5616](https://github.com/aws/eks-anywhere-build-tooling/pull/5616))
 - kube-vip: `v1.2.0` to `v1.2.3` ([#5531](https://github.com/aws/eks-anywhere-build-tooling/pull/5531))
 
